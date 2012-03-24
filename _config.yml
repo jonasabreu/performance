@@ -17,11 +17,11 @@ email: jonas@vidageek.net
 # feedburner:
 #   id: feedburnerid
 
-# google_analytics:
-#   account: UA-XXXXX-X
+google_analytics:
+  account: UA-1508082-7
 
 # github:
 #   username: ghusername
 
-# disqus:
-#   id: disqusid
+disqus:
+  id: performancejava
