@@ -26,13 +26,18 @@
     {% endif %}
   </head>
   <body>
+		 <div class="navbar">
+    	<div class="navbar-inner">
+			  <div class="container">
+			    		<a id="site-name" class="brand" href="/">{{ site.title }}</a>
+		    </div>
+		  </div>
+    </div>
     <div class="container">
-			<header>
-	    	<a href="/"><h1>{{ site.title }}</h1></a>
-			</header>
 			<div class="row">
 				<div class="span3">
-					<ul class="nav nav-list">
+					<ul class="nav nav-stacked nav-tabs">
+						<li><a href="/">Home</a></li>
 					  {% for page in site.html_pages %}
 	  		 			{% if page.title %}
 	  			    	<li><a href="{{ page.url }}">{{ page.title }}</a></li>
