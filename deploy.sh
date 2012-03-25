@@ -12,6 +12,7 @@ typeFor(){
 	if [ $TYPE == "xml" ]; then CONTENT_TYPE="application/xml"; fi;
 	if [ $TYPE == "css" ]; then CONTENT_TYPE="text/css"; fi;
 	if [ $TYPE == "js" ]; then CONTENT_TYPE="text/javascript"; fi;
+	if [ $TYPE == "png" ]; then CONTENT_TYPE="image/png"; fi;
 }
 
 for X in `find . -type f | sed -E "s/\.\///"`; do 
