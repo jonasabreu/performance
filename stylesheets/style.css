@@ -10,3 +10,9 @@ code {
 div.post {
 	margin-top: 20px;	
 }
+
+.navbar img {
+  height: 30px;
+  margin: 5px 90px;
+	float: right;
+}
