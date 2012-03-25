@@ -1,6 +1,6 @@
 #! /bin/bash
 
-jekyll
+jekyll || /var/lib/gems/1.8/bin/jekyll
 
 cd _site;
 
