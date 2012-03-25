@@ -14,8 +14,8 @@ email: jonas@vidageek.net
 
 # configuration for ehancements, uncomment to enable
 
-# feedburner:
-#   id: feedburnerid
+feedburner:
+  id: PerformanceJava
 
 google_analytics:
   account: UA-1508082-7
