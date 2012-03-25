@@ -1,0 +1,9 @@
+Temas
+- build
+- estruturas de dados
+- pitfalls (regex, string concat dentro de laço
+- concorrência
+- como testar efetivamente (definir metas de otimização, atacar um problema por vez, reduzir confounding)
+- como monitorar performance
+- tooling (profilers, jmap, jstack)
+- flags jvm
