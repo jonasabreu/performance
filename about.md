@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Sobre
 ---
 
 All about me and my blog...
