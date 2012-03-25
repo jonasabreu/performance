@@ -17,5 +17,5 @@ typeFor(){
 for X in `find . -type f | sed -E "s/\.\///"`; do 
 	echo "Deploying $X";
 	typeFor $X
-	aws put "x-amz-acl: public-read" "Content-Type: $CONTENT_TYPE" www.javaperformance.com.br $X;
+	~/bin/aws/aws put "x-amz-acl: public-read" "Content-Type: $CONTENT_TYPE" www.javaperformance.com.br $X;
 done;
