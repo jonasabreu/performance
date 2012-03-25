@@ -3,7 +3,7 @@ a#site-name {
 }
 
 code {
-  padding: 0 4px;
+	padding: 0 4px;
 	border: none;
 }
 
@@ -12,7 +12,15 @@ div.post {
 }
 
 .navbar img {
-  height: 30px;
-  margin: 5px 90px;
+	height: 30px;
+	margin: 5px 90px;
 	float: right;
+}
+
+h1, #by{
+	margin-bottom: 20px;
+}
+
+#by {
+	margin-top: -20px;
 }

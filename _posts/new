@@ -1,0 +1,11 @@
+#! /bin/bash
+
+POST=`date +%Y-%m-%d`-$1.md
+
+echo "---" >> $POST
+echo "layout: post" >> $POST
+echo "title:" >> $POST
+echo "permalink:" >> $POST
+echo "category:" >> $POST
+echo "---" >> $POST
+
