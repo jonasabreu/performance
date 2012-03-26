@@ -1,6 +1,6 @@
 #! /bin/bash
 
-POST=`date +%Y-%m-%d`-$1.md
+POST=`date +%Y-%m-%d`-$1.markdown
 
 echo "---" >> $POST
 echo "layout: post" >> $POST
