@@ -25,3 +25,30 @@ div#bar {
 	width: 940px;
 	margin: 0px auto;
 }
+
+div#related {
+	margin-top: 20px;
+}
+
+.sbutton {
+	display: inline-block;
+    overflow: hidden;
+    width: 54px;
+}
+
+#pageshare {
+	height: 32px;
+	overflow: hidden;
+}
+
+.twitter {
+	margin-left: 22px;
+    position: relative;
+    top: 3px;
+}
+
+.plusone {
+	margin-left: 28px;
+    position: relative;
+    top: 7px;
+}
