@@ -20,3 +20,5 @@ for X in `find . -type f | sed -E "s/\.\///"`; do
 	typeFor $X
 	~/bin/aws/aws put "x-amz-acl: public-read" "Content-Type: $CONTENT_TYPE" www.javaperformance.com.br $X;
 done;
+
+curl "http://feedburner.google.com/fb/a/pingSubmit?bloglink=http%3A%2F%2Fwww.javaperformance.com.br"
