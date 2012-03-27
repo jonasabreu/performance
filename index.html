@@ -5,7 +5,7 @@ layout: default
 <h1>&Uacute;ltimas atualiza&ccedil;&otilde;es</h1>
 <div id="content">
   <ul>
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit:10 %}
       <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>

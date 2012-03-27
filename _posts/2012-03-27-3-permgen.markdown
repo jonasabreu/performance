@@ -1,0 +1,25 @@
+---
+layout: post
+title: -XX:PermSize
+permalink: /permsize.html
+category: flags
+---
+
+Quem nunco tomou um `OutOfMemoryError: Permgen Space`? Eu já tomei vários. A maioria associado à algum
+memory leak estranho.
+
+Mas recentemente passei por um problema estranho.
+
+Uma aplicação que era 100% Java estava sendo migrada para Scala. No meio da migração comecei a tomar
+erros aleatórios relacionados ao permgen.
+
+Chegou ao ponto da aplicação simplesmente parar de subir.
+
+O que estava acontecendo é que código Scala, depois de compilado, em geral cria muito mais `.class` que
+código java. Na JVM da Oracle, os `.class` ficam na área de memória chamada Permgen.
+
+Como nesse caso o problema não era um leak de memória (o profiler me confirmou isso), simplesmente 
+aumentamos o tamanho do permgen e o problema sumiu. 
+
+Vale lembrar que esse caso era de uma exceção no momento em que o servidor subia e não alguns dias depois
+como costuma ser mais comum em casos de memory leak.
