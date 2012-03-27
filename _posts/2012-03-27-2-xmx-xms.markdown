@@ -1,0 +1,17 @@
+---
+layout: post
+title: -Xmx e -Xms
+permalink: /xmx-xms.html
+category: flags
+---
+
+Esse é bem conhecido mas não custa comentar novamente.
+
+Quando for definir a memória alocada pela sua JVM, utilize o mesmo valor para o `-Xmx` e o `-Xms`.
+
+Se você não coloca o mesmo valor, o que acontece é que quando a JVM estiver no limite de quanto ela tem 
+alocado no momento, ela vai passar o GC (provavelmente stop-the-world) tentando coletar memória para evitar 
+a nova alocação, o que pode causar demoras para o seu usuário.
+
+Se o `-Xmx` é maior que o `-Xms`, significa que você tem mais memória disponível na máquina, então deixe a JVM
+alocar logo no começo para evitar uso excessivo do GC.
