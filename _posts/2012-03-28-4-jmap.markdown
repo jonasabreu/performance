@@ -1,0 +1,50 @@
+---
+layout: post
+title: JMap Histogram
+permalink: /jmap-histo.html
+category: ferramentas
+---
+
+Quando falei sobre [VisualVM](/visual-vm.html), comentei que o sampling de memória só funciona local. Mas 
+também falei que não costumo sentir muita falta disso. A razão é uma ferramenta que vem junto com o JDK, 
+o [JMap][1].
+
+O `JMap` serve para vermos o estado da mémoria na aplicação. Em geral, para encontrar algum problema relacionado
+à memória, o que mais tenho interesse é em quantas instâncias existem e o custo total de memória.
+
+Para obter essa informação basta rodar `jmap -histo PID_DA_APLICACAO`. O resultado vai ser semelhante à esse (rodei 
+com o pid da minha VisualVM):
+
+	 num     #instances         #bytes  class name
+	----------------------------------------------
+	   1:         54811        7470568  <methodKlass>
+	   2:         54811        7412168  <constMethodKlass>
+	   3:          4890        5908720  <constantPoolKlass>
+	   4:         66006        5737168  [C
+	   5:          4890        4228632  <instanceKlassKlass>
+	   6:         83853        4188840  <symbolKlass>
+	   7:          4290        3751344  <constantPoolCacheKlass>
+	   8:         19144        2735592  [B
+	   9:         56228        1799296  java.lang.String
+	  10:          5963        1741896  [I
+	  11:          6462         572368  [Ljava.util.HashMap$Entry;
+	  12:          5267         547768  java.lang.Class
+	  13:          8039         537856  [S
+	  14:         14566         466112  java.util.HashMap$Entry
+	  15:          7884         415792  [[I
+	  16:          4007         346512  [Ljava.lang.String;
+	  17:           642         330224  <methodDataKlass>
+	  18:          6129         310096  [Ljava.lang.Object;
+	  19:          6055         290640  java.util.HashMap
+	  20:           348         203232  <objArrayKlassKlass>
+	  21:          3750         180000  java.nio.HeapCharBuffer
+	  22:          3746         179808  java.nio.HeapByteBuffer
+	  23:          7214         173136  java.lang.StringBuilder
+	  24:          5297         169504  java.util.Hashtable$Entry
+	  25:          1885          90480  java.util.StringTokenizer
+	  26:          2486          79552  javax.swing.text.html.parser.ContentModel
+	  27:           568          69872  [Ljava.util.Hashtable$Entry;
+
+O ideal é que você tenha uma idéia geral de como se comporta a memória da sua aplicação, porque fica bem mais fácil de encontrar algum problema.
+
+[1]: http://docs.oracle.com/javase/1.5.0/docs/tooldocs/share/jmap.html

@@ -1,5 +1,3 @@
-jstack
-recursão infinita (procurando item na dom)
 jmap
 redirect infinito (buscape-inc)
 layer redis transparente
@@ -22,3 +20,10 @@ PerformanceProbe
 Xsl Fragment Cache
 Concatenação de string dentro de laço
 hashcode de string quando você tem um mapa com milhões de entidades
+sun.misc.Unsafe
+Fast REflection com *Accessor
+URL.equals
+jps
+flag sem volatile e recarga aocntecendo o tempo todo
+alternativas lock free (j.u.c)
+objetos imutaveis de vida curta (goodstauf collector)http://www.ibm.com/developerworks/java/library/j-jtp09275/index.html http://tobega.blogspot.com.br/2008/11/gc-is-for-goodstuff-collector.html

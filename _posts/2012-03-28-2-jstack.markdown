@@ -1,0 +1,16 @@
+---
+layout: post
+title: JStack
+permalink: /jstack.html
+category: ferramentas
+---
+
+Certa vez tive um problema no ambiente de produção e não conseguia conectar a [VisualVM](/visual-vm.html).
+
+Pelo load da máquina e pela frequencia esporádica, eu suspeitava de algum problema de concorrência e queria
+checar o thread dump da máquina.
+
+Para isso usei o [jstack](http://docs.oracle.com/javase/1.5.0/docs/tooldocs/share/jstack.html), que é uma 
+ferramenta que vem junto com o JDK.
+
+Basicamente, você roda `jstack PID_DA_APLICACAO` e ele imprime no seu terminal o Thread Dump da aplicação.
