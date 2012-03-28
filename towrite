@@ -1,0 +1,24 @@
+jstack
+recursão infinita (procurando item na dom)
+jmap
+redirect infinito (buscape-inc)
+layer redis transparente
+quando cachear
+como testar performance
+porque teste que acessam muitas paginas sao ruins
+definir metas para otimizacao
+estrategia inicial (paginas mais acessadas, responder em pouco tempo)
+cache local X cache distribuido
+quando otimizar
+otimizacao prematura é a raiz de todos os males
+monitoria de performance
+monitoria de performance de producao
+onde cachear (qual nível)
+cache hits
+cache lru com poucos elementos e muita rotacao
+visual vm em máquinas remotas
+ab
+PerformanceProbe
+Xsl Fragment Cache
+Concatenação de string dentro de laço
+hashcode de string quando você tem um mapa com milhões de entidades

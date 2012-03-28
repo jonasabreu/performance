@@ -1,0 +1,25 @@
+---
+layout: post
+title: VisualVM
+permalink: /visual-vm.html
+category: ferramentas
+---
+
+Provavelmenta a ferramenta que mais uso para analizar performance é a [VisualVM](http://visualvm.java.net/).
+
+Embora ela não seja tão bem acabada como o [JProfiler](http://www.ej-technologies.com/products/jprofiler/overview.html), 
+ela é OpenSource e gratuita, além de ter todas as ferramentas que costumo precisar, como:
+
+* Monitoramento do número de threads
+* Monitoramento de memória (heap e permgen)
+* Monitoramento de cpu
+* Possibilidade de extrair um Heap Dump
+* Possibilidade de extrair um Thread Dump
+* Analise detalhada de cada thread
+* Sampling (profiler bem leve) de cpu e memória
+* Profiling de cpu e memória
+
+E ainda tem suporte à algumas dezenas de plugins.
+
+Acho que a limitação mais chata dela é o Sampling de memória só funcionar local. Mas não é nada que eu tenha sentido 
+muita falta até hoje.
