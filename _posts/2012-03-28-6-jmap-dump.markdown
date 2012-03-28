@@ -1,0 +1,13 @@
+---
+layout: post
+title: JMap Heap Dump
+permalink: /jmap-dump.html
+category: ferramentas
+---
+
+O [JMap](/jmap-histo.html) também permite que você faça o Heap Dump da sua aplicação, para analisar em
+outro momento.
+
+Basta rodar `jmap -dump:file=ARQUIVO_PARA_SALVAR.hprof PID_DA_APLICACAO`.
+
+Depois você pode copiar para a sua  máquina e carregá-lo na sua [VisualVM](/visual-vm.html).
