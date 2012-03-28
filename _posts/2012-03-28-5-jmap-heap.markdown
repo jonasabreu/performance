@@ -1,0 +1,65 @@
+---
+layout: post
+title: JMap Heap
+permalink: /jmap-heap.html
+category: ferramentas
+---
+
+Usando o  [JMap](/jmap-histo.html) você também consegue analizar o estado to seu heap.
+
+Para isso, basta rodar `jmap -heap PID_DA_APLICACAO`. O resultado é algo semelhante a isso:
+
+	Attaching to process ID 58271, please wait...
+	Debugger attached successfully.
+	Server compiler detected.
+	JVM version is 20.4-b02-402
+
+	using parallel threads in the new generation.
+	using thread-local object allocation.
+	Concurrent Mark-Sweep GC
+
+	Heap Configuration:
+	   MinHeapFreeRatio = 40
+	   MaxHeapFreeRatio = 70
+	   MaxHeapSize      = 268435456 (256.0MB)
+	   NewSize          = 21757952 (20.75MB)
+	   MaxNewSize       = 43581440 (41.5625MB)
+	   OldSize          = 65404928 (62.375MB)
+	   NewRatio         = 7
+	   SurvivorRatio    = 8
+	   PermSize         = 21757952 (20.75MB)
+	   MaxPermSize      = 85983232 (82.0MB)
+
+	Heap Usage:
+	New Generation (Eden + 1 Survivor Space):
+	   capacity = 19595264 (18.6875MB)
+	   used     = 9074128 (8.653762817382812MB)
+	   free     = 10521136 (10.033737182617188MB)
+	   46.30776089569398% used
+	Eden Space:
+	   capacity = 17432576 (16.625MB)
+	   used     = 8309072 (7.9241485595703125MB)
+	   free     = 9123504 (8.700851440429688MB)
+	   47.66405148613722% used
+	From Space:
+	   capacity = 2162688 (2.0625MB)
+	   used     = 765056 (0.7296142578125MB)
+	   free     = 1397632 (1.3328857421875MB)
+	   35.37523674242424% used
+	To Space:
+	   capacity = 2162688 (2.0625MB)
+	   used     = 0 (0.0MB)
+	   free     = 2162688 (2.0625MB)
+	   0.0% used
+	concurrent mark-sweep generation:
+	   capacity = 8777728 (8.37109375MB)
+	   used     = 4547440 (4.3367767333984375MB)
+	   free     = 4230288 (4.0343170166015625MB)
+	   51.80657227018199% used
+	Perm Generation:
+	   capacity = 62521344 (59.625MB)
+	   used     = 37527360 (35.78887939453125MB)
+	   free     = 24993984 (23.83612060546875MB)
+	   60.023277810534594% used
+
+Note que você consegue ver cada um dos espaços de memória e quanto está sendo usado em cada.
