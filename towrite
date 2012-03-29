@@ -1,6 +1,7 @@
 layer redis transparente
+como não testar uma aplicação
 quando cachear
-como testar performance
+como testar performance (exmplo pratico de um fluxo meu)
 porque teste que acessam muitas paginas sao ruins
 estrategia inicial (paginas mais acessadas, responder em pouco tempo)
 cache local X cache distribuido
