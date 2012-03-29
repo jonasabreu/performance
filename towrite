@@ -25,3 +25,4 @@ alternativas lock free (j.u.c)
 objetos imutaveis de vida curta (goodstauf collector)http://www.ibm.com/developerworks/java/library/j-jtp09275/index.html http://tobega.blogspot.com.br/2008/11/gc-is-for-goodstuff-collector.html
 maven -o
 como funciona o gc geracional
+levar em conta o aquecimento da VM
