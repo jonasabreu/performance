@@ -2,7 +2,6 @@ layer redis transparente
 quando cachear
 como testar performance
 porque teste que acessam muitas paginas sao ruins
-definir metas para otimizacao
 estrategia inicial (paginas mais acessadas, responder em pouco tempo)
 cache local X cache distribuido
 quando otimizar

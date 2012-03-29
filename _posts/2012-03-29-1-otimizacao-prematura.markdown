@@ -18,7 +18,7 @@ E [software lerdo faz seus clientes não gostarem de usar seu produto][3].
 
 O grande ponto é que Otimização Prematura não é a otimização feita desde o começo do projeto. Otimização 
 prematura é a otimização feita sem ter a menor noção do impacto que aquilo terá no projeto e sem ter como
-verificar que a [melhoria](/metas-otimizacao-aplicacoes-existentes.html) aconteceu (efetivamente) e que ela 
+verificar que a melhoria aconteceu (efetivamente) e que ela 
 continua efetiva durante o desenvolvimento.
 
 Não adianta achar que é possível simplesmente pegar uma aplicação depois de 6 meses de desenvolvimento
