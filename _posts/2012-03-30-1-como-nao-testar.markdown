@@ -38,4 +38,4 @@ cuidado para não cair em [micro otimizações][4].
 [1]: /como-testar.html
 [2]: http://stats.org/in_depth/faq/confounding_factors.htm
 [3]: http://en.wikipedia.org/wiki/Confounding
-[4]: /micro-otimizacao.html
+[4]: /nao-otimize-sem-dados.html
