@@ -53,7 +53,7 @@ div#related {
     top: 7px;
 }
 
-div#license {
+div#license, div#email {
 	margin-top: 15px;
     text-align: center;
 }
