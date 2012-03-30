@@ -2,7 +2,7 @@
 layout: post
 title: Como não testar uma aplicação
 permalink: /como-nao-testar.html
-category: Conceitos
+category: conceitos
 ---
 
 Acho que a forma que mais vi aplicações serem testadas até hoje era mais ou menos a seguinte:
