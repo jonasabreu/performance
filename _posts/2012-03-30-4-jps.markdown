@@ -1,0 +1,39 @@
+---
+layout: post
+title: Jps
+permalink: /jps.html
+category: ferramentas
+---
+
+Ferramenta simples mas bem útil.
+
+Sempre que preciso rodar alguma aplicação como o [jstack][1] ou o [jmap][2] eu preciso saber qual o PID
+da minha aplicação. O jeito como eu costumava fazer era:
+
+	ps aux | grep java
+
+Mas conheci recentemente a ferramenta [jps][3] que também vem por padrão com o JDK.
+
+Basta rodá-la que você vê a lista de PIDs de aplicações java rodando. O output é parecido com isso:
+
+	73546 Jps
+	73544 Main
+
+Ele deixa um pouco a desejar, porque o nome das aplicações não é muito descritivo.
+
+Mas se você rodar
+
+	jps -l
+
+ele lista também os pacotes, facilitando a identificação.
+
+	73544 org.netbeans.Main
+	73688 sun.tools.jps.Jps
+
+Na listagem acima, o Main é a [VisualVM][4]
+
+
+[1]: /jstack.html
+[2]: /jmap-histo.html
+[3]: http://docs.oracle.com/javase/1.5.0/docs/tooldocs/share/jps.html
+[4]: /visual-vm.html
