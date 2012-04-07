@@ -1,7 +1,6 @@
 layer redis transparente
 quando cachear
 como testar performance (exmplo pratico de um fluxo meu)
-porque teste que acessam muitas paginas sao ruins
 estrategia inicial (paginas mais acessadas, responder em pouco tempo)
 cache local X cache distribuido
 quando otimizar
@@ -11,7 +10,6 @@ onde cachear (qual nível)
 cache hits
 cache lru com poucos elementos e muita rotacao
 visual vm em máquinas remotas
-PerformanceProbe
 Xsl Fragment Cache
 Concatenação de string dentro de laço
 hashcode de string quando você tem um mapa com milhões de entidades
@@ -24,3 +22,4 @@ objetos imutaveis de vida curta (goodstauf collector)http://www.ibm.com/develope
 maven -o
 como funciona o gc geracional
 levar em conta o aquecimento da VM
+para otimizar você precisa fazer o processador trabalhar menos
