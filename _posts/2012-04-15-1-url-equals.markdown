@@ -1,0 +1,34 @@
+---
+layout: post
+title: URL.equals
+permalink: /url-equals.html
+category: pitfalls
+---
+
+Em uma aplicação que estava desenvolvendo, quando rodei o [Find Bugs][1], ele apontou um erro em um mapa com a seguinte
+declaração:
+
+	Map<URL, MeuObjeto> mapa = new HashMap<URL, MeuObjeto>();
+
+O problema que ele apontava era sobre usar [java.net.URL][2] como chave de um mapa. O pedaço interessante do 
+javadoc é o seguinte:
+
+     * Two URL objects are equal if they have the same protocol, reference
+     * equivalent hosts, have the same port number on the host, and the same
+     * file and fragment of the file.<p>
+     *
+     * Two hosts are considered equivalent if both host names can be resolved
+     * into the same IP addresses; else if either host name can't be
+     * resolved, the host names must be equal without regard to case; or both
+     * host names equal to null.<p>
+     *
+     * Since hosts comparison requires name resolution, this operation is a
+     * blocking operation. <p>
+
+Segundo o javadoc, a chamada para o equals pode precisar fazer lookup de DNS, o que pode consumir uns
+bons millisegundos. Além de ser uma possível fonte de bugs.
+
+A solução foi simplesmente usar String no lugar de URL.
+
+[1]: http://findbugs.sourceforge.net/
+[2]: http://docs.oracle.com/javase/6/docs/api/java/net/URL.html

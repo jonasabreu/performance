@@ -3,7 +3,6 @@ quando cachear
 como testar performance (exmplo pratico de um fluxo meu)
 estrategia inicial (paginas mais acessadas, responder em pouco tempo)
 cache local X cache distribuido
-quando otimizar
 monitoria de performance
 monitoria de performance de producao
 onde cachear (qual nível)
@@ -11,7 +10,6 @@ cache hits
 cache lru com poucos elementos e muita rotacao
 visual vm em máquinas remotas
 Xsl Fragment Cache
-Concatenação de string dentro de laço
 hashcode de string quando você tem um mapa com milhões de entidades
 sun.misc.Unsafe
 Fast REflection com *Accessor
@@ -24,3 +22,5 @@ como funciona o gc geracional
 levar em conta o aquecimento da VM
 para otimizar você precisa fazer o processador trabalhar menos
 usando código assincrono para reduzir desvio padrão
+Colocar servidor próximo ao usuário
+Guice > Spring.
