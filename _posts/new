@@ -6,7 +6,7 @@ let "NUM=`ls $DATE* 2>/dev/null | wc -l` + 1"
 
 POST=$DATE-$NUM-$1.markdown
 
-echo "---" >> $POST
+echo "---" > $POST
 echo "layout: post" >> $POST
 echo "title:" >> $POST
 echo "permalink:" >> $POST
