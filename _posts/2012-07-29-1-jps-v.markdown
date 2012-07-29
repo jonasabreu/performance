@@ -1,0 +1,21 @@
+---
+layout: post
+title: Jps -v
+permalink: /jps-v.html
+category: ferramentas
+---
+
+Recentemente precisei saber com quais flags uma JVM tinha subido. Nessa máquina específica eu ainda 
+não tinha configurado o acesso da [VisualVM][1].
+
+Depois de olhar o [man][2] do [jps][3], encontrei a flag `-v`.
+
+Rodando na minha máquina, ele devolve o seguinte resultado:
+	
+	3318 Jps -Dapplication.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home -Xms8m
+	3311  -Dosgi.requiredJavaVersion=1.5 -XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -XX:MaxPermSize=256m -Xms384m -Xmx1024m -Xdock:icon=../Resources/Eclipse.icns -XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+
+
+[1]: /visual-vm.html
+[2]: http://en.wikipedia.org/wiki/Man_page
+[3]: /jps.html
